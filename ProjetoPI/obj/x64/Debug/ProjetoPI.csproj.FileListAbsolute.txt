@@ -187,9 +187,7 @@ C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - C
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmLogin.resources
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmMenuPrincipal.resources
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmParceiros.resources
-C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmpesquisar.resources
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmSplash.resources
-C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmUsuarios.resources
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.Properties.Resources.resources
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.csproj.GenerateResource.cache
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.csproj.CoreCompileInputs.cache
@@ -197,3 +195,4 @@ C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - C
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.exe
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.pdb
 C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.csproj.AssemblyReference.cache
+C:\Users\thiago.ssconceicao\Documents\Visual Studio 2019\empresaAquiseulixo2 - Copia\ProjetoPI\obj\x64\Debug\ProjetoPI.frmPesquisaFunc.resources

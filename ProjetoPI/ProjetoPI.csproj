@@ -154,23 +154,17 @@
     <Compile Include="frmParceiros.Designer.cs">
       <DependentUpon>frmParceiros.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmpesquisar.cs">
+    <Compile Include="frmPesquisaFunc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmpesquisar.Designer.cs">
-      <DependentUpon>frmpesquisar.cs</DependentUpon>
+    <Compile Include="frmPesquisaFunc.Designer.cs">
+      <DependentUpon>frmPesquisaFunc.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUsuarios.Designer.cs">
-      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,14 +189,11 @@
     <EmbeddedResource Include="frmParceiros.resx">
       <DependentUpon>frmParceiros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmpesquisar.resx">
-      <DependentUpon>frmpesquisar.cs</DependentUpon>
+    <EmbeddedResource Include="frmPesquisaFunc.resx">
+      <DependentUpon>frmPesquisaFunc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUsuarios.resx">
-      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -38,12 +38,7 @@ namespace ProjetoPI
             this.Hide();
         }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
-        {
-            frmUsuarios abrir = new frmUsuarios();
-            abrir.Show();
-            this.Hide();
-        }
+       
 
         private void btnLocalizacao_Click(object sender, EventArgs e)
         {

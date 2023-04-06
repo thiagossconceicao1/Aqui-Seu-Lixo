@@ -1,7 +1,7 @@
 ﻿
 namespace ProjetoPI
 {
-    partial class frmpesquisar
+    partial class frmPesquisaFunc
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ProjetoPI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpesquisar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPesquisaFunc));
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.ltbItensPesquisados = new System.Windows.Forms.ListBox();
@@ -133,7 +133,7 @@ namespace ProjetoPI
             this.rdbCodigo.UseVisualStyleBackColor = true;
             this.rdbCodigo.CheckedChanged += new System.EventHandler(this.rdbCodigo_CheckedChanged);
             // 
-            // frmpesquisar
+            // frmPesquisaFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -142,13 +142,8 @@ namespace ProjetoPI
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.ltbItensPesquisados);
             this.Controls.Add(this.gpbPesquisar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmpesquisar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmpesquisar";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-            this.Load += new System.EventHandler(this.frmpesquisar_Load);
+            this.Name = "frmPesquisaFunc";
+            this.Text = "frmPesquisaFunc";
             this.gpbPesquisar.ResumeLayout(false);
             this.gpbPesquisar.PerformLayout();
             this.ResumeLayout(false);

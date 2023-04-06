@@ -96,6 +96,7 @@ namespace ProjetoPI
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnNovo
             // 
@@ -147,6 +148,7 @@ namespace ProjetoPI
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -215,7 +217,7 @@ namespace ProjetoPI
             this.txtCargo.Location = new System.Drawing.Point(343, 65);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(100, 26);
-            this.txtCargo.TabIndex = 32;
+            this.txtCargo.TabIndex = 1;
             // 
             // lblCargo
             // 
@@ -223,7 +225,7 @@ namespace ProjetoPI
             this.lblCargo.Location = new System.Drawing.Point(339, 41);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(52, 20);
-            this.lblCargo.TabIndex = 31;
+            this.lblCargo.TabIndex = 101;
             this.lblCargo.Text = "Cargo";
             // 
             // pctlogo
@@ -241,7 +243,7 @@ namespace ProjetoPI
             this.txtComplemento.MaxLength = 50;
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(157, 26);
-            this.txtComplemento.TabIndex = 9;
+            this.txtComplemento.TabIndex = 12;
             // 
             // lblComplemento
             // 
@@ -250,7 +252,7 @@ namespace ProjetoPI
             this.lblComplemento.Location = new System.Drawing.Point(513, 399);
             this.lblComplemento.Name = "lblComplemento";
             this.lblComplemento.Size = new System.Drawing.Size(108, 20);
-            this.lblComplemento.TabIndex = 29;
+            this.lblComplemento.TabIndex = 112;
             this.lblComplemento.Text = "Complemento";
             // 
             // txtNum
@@ -260,7 +262,7 @@ namespace ProjetoPI
             this.txtNum.MaxLength = 10;
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(91, 26);
-            this.txtNum.TabIndex = 7;
+            this.txtNum.TabIndex = 11;
             // 
             // lblNum
             // 
@@ -269,7 +271,7 @@ namespace ProjetoPI
             this.lblNum.Location = new System.Drawing.Point(403, 399);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(65, 20);
-            this.lblNum.TabIndex = 27;
+            this.lblNum.TabIndex = 111;
             this.lblNum.Text = "Número";
             // 
             // mskCEP
@@ -278,7 +280,7 @@ namespace ProjetoPI
             this.mskCEP.Mask = "00000000";
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(92, 26);
-            this.mskCEP.TabIndex = 8;
+            this.mskCEP.TabIndex = 7;
             // 
             // txtCodigo
             // 
@@ -287,7 +289,7 @@ namespace ProjetoPI
             this.txtCodigo.MaxLength = 5;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(91, 26);
-            this.txtCodigo.TabIndex = 1;
+            this.txtCodigo.TabIndex = 0;
             // 
             // mskCPF
             // 
@@ -296,7 +298,7 @@ namespace ProjetoPI
             this.mskCPF.Mask = "000,000,000-00";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(122, 26);
-            this.mskCPF.TabIndex = 5;
+            this.mskCPF.TabIndex = 6;
             this.mskCPF.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mskCPF_KeyDown);
             // 
             // lblCPF
@@ -306,7 +308,7 @@ namespace ProjetoPI
             this.lblCPF.Location = new System.Drawing.Point(161, 293);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(40, 20);
-            this.lblCPF.TabIndex = 23;
+            this.lblCPF.TabIndex = 106;
             this.lblCPF.Text = "CPF";
             // 
             // cbbEstado
@@ -315,7 +317,7 @@ namespace ProjetoPI
             this.cbbEstado.Location = new System.Drawing.Point(163, 366);
             this.cbbEstado.Name = "cbbEstado";
             this.cbbEstado.Size = new System.Drawing.Size(73, 28);
-            this.cbbEstado.TabIndex = 12;
+            this.cbbEstado.TabIndex = 8;
             // 
             // lblEstado
             // 
@@ -324,7 +326,7 @@ namespace ProjetoPI
             this.lblEstado.Location = new System.Drawing.Point(161, 345);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(60, 20);
-            this.lblEstado.TabIndex = 20;
+            this.lblEstado.TabIndex = 108;
             this.lblEstado.Text = "Estado";
             // 
             // txtCidade
@@ -334,7 +336,7 @@ namespace ProjetoPI
             this.txtCidade.MaxLength = 50;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(132, 26);
-            this.txtCidade.TabIndex = 11;
+            this.txtCidade.TabIndex = 9;
             // 
             // lblCidade
             // 
@@ -343,7 +345,7 @@ namespace ProjetoPI
             this.lblCidade.Location = new System.Drawing.Point(10, 400);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(59, 20);
-            this.lblCidade.TabIndex = 18;
+            this.lblCidade.TabIndex = 109;
             this.lblCidade.Text = "Cidade";
             // 
             // txtBairro
@@ -362,7 +364,7 @@ namespace ProjetoPI
             this.lblBairro.Location = new System.Drawing.Point(161, 400);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(51, 20);
-            this.lblBairro.TabIndex = 16;
+            this.lblBairro.TabIndex = 110;
             this.lblBairro.Text = "Bairro";
             // 
             // lblCEP
@@ -372,7 +374,7 @@ namespace ProjetoPI
             this.lblCEP.Location = new System.Drawing.Point(10, 345);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(41, 20);
-            this.lblCEP.TabIndex = 14;
+            this.lblCEP.TabIndex = 107;
             this.lblCEP.Text = "CEP";
             // 
             // txtEndereco
@@ -382,7 +384,7 @@ namespace ProjetoPI
             this.txtEndereco.MaxLength = 100;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(424, 26);
-            this.txtEndereco.TabIndex = 6;
+            this.txtEndereco.TabIndex = 4;
             // 
             // lblEndereco
             // 
@@ -391,7 +393,7 @@ namespace ProjetoPI
             this.lblEndereco.Location = new System.Drawing.Point(10, 237);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(78, 20);
-            this.lblEndereco.TabIndex = 12;
+            this.lblEndereco.TabIndex = 104;
             this.lblEndereco.Text = "Endereço";
             // 
             // mskTelefone
@@ -401,7 +403,7 @@ namespace ProjetoPI
             this.mskTelefone.Mask = "(00) 00000-0000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(133, 26);
-            this.mskTelefone.TabIndex = 4;
+            this.mskTelefone.TabIndex = 5;
             // 
             // lblTelefon
             // 
@@ -410,7 +412,7 @@ namespace ProjetoPI
             this.lblTelefon.Location = new System.Drawing.Point(7, 293);
             this.lblTelefon.Name = "lblTelefon";
             this.lblTelefon.Size = new System.Drawing.Size(71, 20);
-            this.lblTelefon.TabIndex = 10;
+            this.lblTelefon.TabIndex = 105;
             this.lblTelefon.Text = "Telefone";
             // 
             // lblCRM
@@ -420,7 +422,7 @@ namespace ProjetoPI
             this.lblCRM.Location = new System.Drawing.Point(185, 42);
             this.lblCRM.Name = "lblCRM";
             this.lblCRM.Size = new System.Drawing.Size(59, 20);
-            this.lblCRM.TabIndex = 2;
+            this.lblCRM.TabIndex = 100;
             this.lblCRM.Text = "Código";
             // 
             // txtNome
@@ -448,7 +450,7 @@ namespace ProjetoPI
             this.lblNome.Location = new System.Drawing.Point(185, 103);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(51, 20);
-            this.lblNome.TabIndex = 4;
+            this.lblNome.TabIndex = 102;
             this.lblNome.Text = "Nome";
             // 
             // lblEmail
@@ -458,7 +460,7 @@ namespace ProjetoPI
             this.lblEmail.Location = new System.Drawing.Point(10, 183);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(53, 20);
-            this.lblEmail.TabIndex = 8;
+            this.lblEmail.TabIndex = 103;
             this.lblEmail.Text = "E-mail";
             // 
             // frmfuncionarios
@@ -472,7 +474,7 @@ namespace ProjetoPI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmfuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmfuncionarios";
+            this.Text = "Sistema de controle Aqui Seu Lixo - Funcionarios";
             this.pnlParceiros.ResumeLayout(false);
             this.gpbInfoMedico.ResumeLayout(false);
             this.gpbInfoMedico.PerformLayout();

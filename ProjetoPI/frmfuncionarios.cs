@@ -41,10 +41,11 @@ namespace ProjetoPI
             txtBairro.Enabled = false;
             txtNum.Enabled = false;
             txtComplemento.Enabled = false;
-            btnNovo.Enabled = false;
-            btnCadastrar.Enabled = true;
+            btnNovo.Enabled = true;
+            btnCadastrar.Enabled = false;
             btnAlterar.Enabled = false;
             btnExcluir.Enabled = false;
+            btnPesquisar.Enabled = true;
             btnLimpar.Enabled = false;
             btnVoltar.Enabled = true;
         }
@@ -63,9 +64,10 @@ namespace ProjetoPI
             txtNum.Enabled = true;
             txtComplemento.Enabled = true;
             btnNovo.Enabled = true;
-            btnCadastrar.Enabled = true;
-            btnAlterar.Enabled = true;
-            btnExcluir.Enabled = true;
+            btnCadastrar.Enabled = false;
+            btnAlterar.Enabled = false;
+            btnExcluir.Enabled = false;
+            btnPesquisar.Enabled = true;
             btnLimpar.Enabled = true;
             btnVoltar.Enabled = true;
             txtNome.Focus();
@@ -84,6 +86,23 @@ namespace ProjetoPI
             txtBairro.Text = "";
             txtNum.Clear();
             txtComplemento.Clear();
+        }
+        public void excluirdoBanco()
+        {
+            pctlogo.Enabled = false;
+            txtCodigo.Enabled = false;
+            txtNome.Enabled = false;
+            txtCargo.Enabled = false;
+            txtEmail.Enabled = false;
+            txtEndereco.Enabled = false;
+            mskTelefone.Enabled = false;
+            mskCPF.Enabled = false;
+            mskCEP.Enabled = false;
+            cbbEstado.Enabled = false;
+            txtCidade.Enabled = false;
+            txtBairro.Enabled = false;
+            txtNum.Enabled = false;
+            txtComplemento.Enabled = false;
         }
 
         //carregar a combobox
@@ -104,9 +123,7 @@ namespace ProjetoPI
             desabilitaCampos();
             carregarCombBox();
         }
-        string nome = "";
-
-        bool flag = false;
+       
 
         //contrutor com parametros
         public frmfuncionarios(string nome)
@@ -117,7 +134,6 @@ namespace ProjetoPI
             txtNome.Text = nome;
             habilitarCampos();
             pesquisarCampo(nome);
-            flag = true;
             ativarUpdate();
         }
 
@@ -179,12 +195,14 @@ namespace ProjetoPI
         {
             habilitarCampos();
             btnNovo.Enabled = false;
+            btnCadastrar.Enabled = true;
+            btnVoltar.Enabled = true;
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            frmpesquisar abrir = new frmpesquisar();
-            abrir.ShowDialog();
+            frmPesquisaFunc abrir = new frmPesquisaFunc ();
+            abrir.Show();
             this.Hide();
         }
 
@@ -193,10 +211,10 @@ namespace ProjetoPI
             //Executando o método verificarCampo
             verificarCampo();
             //Executar o método de cadastrar paciente
-            cadastrarPaciente();
+            cadastrarFuncionario();
         }
 
-        public void cadastrarPaciente()
+        public void cadastrarFuncionario()
         {
             MySqlCommand comm = new MySqlCommand();
 
@@ -279,6 +297,40 @@ namespace ProjetoPI
                 buscaCEP(mskCEP.Text);
                 txtNum.Focus();
             }
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+        }
+
+        public void excluirUsuario(int codUsu)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "delete from tbUsuario where codUsu = " + codUsu + ";";
+            comm.CommandType = CommandType.Text;
+            comm.Connection = Conexao.obterConexao();
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@codProd", MySqlDbType.Int32).Value = txtCodigo.Text;
+
+            DialogResult vresp = MessageBox.Show("Deseja Realizar a Exclusão?", "Mensagem do Sistema", MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+            if (vresp == DialogResult.Yes)
+            {
+                int res = comm.ExecuteNonQuery();
+                MessageBox.Show("Registro excluído com sucesso." + res);
+            }
+            else
+            {
+                MessageBox.Show("Não foi excluido.");
+            }
+            Conexao.fecharConexao();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            excluirUsuario(Convert.ToInt32(txtCodigo.Text));
         }
     }
 }
